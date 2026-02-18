@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+body{
+    background: rgb(59, 34, 6);
+}
+</style>
+<body>
+    <h1>Formulario de inscrripcion</h1>
+    <form>
+        <div>
+            <p>Title</p>
+            <input type="radio" name="title" id="mr">
+            <label for="mr">Mr.</label>
+            <input type="radio" name="title" id="ms">
+            <label for="ms">Ms.</label>
+            <input type="radio" name="title" id="miss">
+            <label for="miss">Miss</label>
+
+        </div>
+        <div>
+            <label for="firstName"> First Name</label>
+            <br>
+            <input type="text" id="firstName" placeholder="John...">
+        </div>
+        <div>
+            <label for="lastName"> Last Name</label>
+            <br>
+            <input type="text" id="lastName" placeholder="Doe...">
+        </div>
+        <div>
+            <label for="email"> Email</label>
+            <br>
+            <input type="email" id="email" placeholder="JohnDoe@email.com">
+        </div>
+        <div>
+            <label for="phone"> Phone Number</label>
+            <br>
+            <input type="number" id="phone" placeholder="551234567890">
+        </div> 
+        <div>
+            <label for="password"> Passworrd</label>
+            <br>
+            <input type="password" id="password" placeholder="*************">
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <br>
+            <select name="country" id="country">
+             <option value="peru" selected>Perú</option>
+             <option value="chile">Chile</option>
+             <option value="india">India</option>
+            <option value="francia">Francia</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="" id="terms">
+            <label for="terms">I agree to the terms and conditions</label>
+            <br>
+            <textarea name="message" id="message" cols="10" rows="5" placeholder="Write your message..."></textarea>
+        </div>
+        <div>
+            <label for="photo">Your photo</label>
+            <br>
+            <input type="file" name="photo" id="photo">
+        </div>
+        <div>
+            <button type="submit">Sign Up</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
+</body>
+</html>
